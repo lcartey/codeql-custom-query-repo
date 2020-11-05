@@ -1,0 +1,8 @@
+- description:  Code Scanning queries for Java
+- qlpack: codeql-custom-java
+- include:
+    id: java/xss-custom
+- import: codeql-suites/java-code-scanning.qls
+  from: codeql-java
+- exclude:
+    id: java/xss
